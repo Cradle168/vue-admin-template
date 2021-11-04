@@ -1,0 +1,53 @@
+.example {
+    width: 98%;
+    color: #000;
+    background-color: #f6f4f0;
+    background-color: #d0e69c;
+    background-color: #dcecb5;
+    background-color: #e5eecc;
+    margin: 0 0 5px 0;
+    padding: 5px;
+    border: 1px solid #d4d4d4;
+    background-image: -webkit-linear-gradient(#fff, #e5eecc 100px);
+    background-image: linear-gradient(#fff, #e5eecc 100px);
+  }
+  
+  .example .example_head {
+    font-size: 120%;
+    font-weight: bold;
+    color: #444;
+    color: #617f10;
+    background-color: transparent;
+    margin-top: 0;
+  }
+  
+  .example a {
+    color: #060;
+    font-size: 13px;
+  }
+  
+  .example a.showbtn:active, .example a.showbtn:hover, .example a.tryitbtn:active, .example a.tryitbtn:hover {
+    background-color: #9ab782;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .example a.showbtn, .example a.showbtn:link, .example a.showbtn:visited, .example a.tryitbtn, .example a.tryitbtn:link, .example a.tryitbtn:visited {
+    display: inline-block;
+    color: #FFF;
+    background-color: #8ca86d;
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-decoration: none;
+    margin-left: 5px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    white-space: nowrap;
+  }
+  
