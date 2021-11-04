@@ -40,7 +40,7 @@
         <el-input v-model="form.desc" type="textarea" />
       </el-form-item>
       <el-form-item label="tinyMC">
-        <!-- <TinymceEditor v-model="form.desc" type="textarea" /> -->
+        <TinymceEditor v-model="form.desc" type="textarea" />
       </el-form-item>
       <el-form-item>
         <el-button type="primary" @click="onSubmit">{{btText}}</el-button>
@@ -51,12 +51,12 @@
 </template>
 
 <script>
-// import TinymceEditor from '@/components/TinymceEditor'
+import TinymceEditor from '@/components/TinymceEditor'
 
 export default {
-//   components: {
-//     TinymceEditor
-//   },
+  components: {
+    TinymceEditor
+  },
   data() {
     return {
       form: {
