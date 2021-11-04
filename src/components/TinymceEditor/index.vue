@@ -41,6 +41,7 @@ import 'tinymce/plugins/autoresize'
 // 扩展插件
 import '../../assets/tinymce/plugins/lineheight/plugin'
 import '../../assets/tinymce/plugins/bdmap/plugin'
+import '../../assets/tinymce/plugins/bgcode/plugin'
 
 export default {
   name: 'TinymceEditor',
@@ -59,12 +60,12 @@ export default {
     plugins: {
       type: [String, Array],
       default:
-        'preview searchreplace autolink directionality visualblocks visualchars fullscreen image link media template code codesample table charmap hr nonbreaking insertdatetime advlist lists wordcount imagetools textpattern autosave bdmap autoresize lineheight'
+        'preview searchreplace autolink directionality visualblocks visualchars fullscreen image link media template code codesample bgcode table charmap hr nonbreaking insertdatetime advlist lists wordcount imagetools textpattern autosave bdmap autoresize lineheight'
     },
     toolbar: {
       type: [String, Array],
       default:
-        'code undo redo restoredraft | cut copy paste pastetext | forecolor backcolor bold italic underline strikethrough link codesample | alignleft aligncenter alignright alignjustify outdent indent lineheight formatpainter | styleselect formatselect fontselect fontsizeselect | bullist numlist | blockquote subscript superscript removeformat | table image media charmap hr pagebreak insertdatetime | bdmap fullscreen preview'
+        'code undo redo restoredraft | cut copy paste pastetext | forecolor backcolor bold italic underline strikethrough link codesample bgcode | alignleft aligncenter alignright alignjustify outdent indent lineheight formatpainter | styleselect formatselect fontselect fontsizeselect | bullist numlist | blockquote subscript superscript removeformat | table image media charmap hr pagebreak insertdatetime | bdmap fullscreen preview'
     }
   },
   data() {
