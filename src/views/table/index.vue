@@ -39,6 +39,12 @@
           <span>{{ scope.row.display_time }}</span>
         </template>
       </el-table-column>
+      <el-table-column fixed="right" label="操作" width="100">
+        <template slot-scope="scope">
+          <el-button type="text" size="small" @click="handleEdit(scope.row)">查看</el-button>
+          <el-button type="text" size="small" @click="handleEdit(scope.row)">编辑</el-button>
+        </template>
+      </el-table-column>
     </el-table>
   </div>
 </template>
@@ -73,6 +79,16 @@ export default {
         this.list = response.data.items
         this.listLoading = false
       })
+    },
+    handleEdit(rowData) {
+      // 带参数跳转
+      // console.log(rowData)
+      this.$router.push({ path: '/example/edit', query: { method: 'edit', data: rowData }})
+    },
+    handleAdd() {
+      // 带参数跳转
+      // console.log(rowData)
+      this.$router.push({ path: '/example/edit', query: { method: 'add', data: null }})
     }
   }
 }
